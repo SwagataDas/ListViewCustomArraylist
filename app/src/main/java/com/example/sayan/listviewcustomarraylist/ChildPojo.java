@@ -6,13 +6,13 @@ package com.example.sayan.listviewcustomarraylist;
 
 //Prerequisite
 // Model object of each child view resource
-public class Child {
+public class ChildPojo {
     // Has two properties one is text and another is image resource id
     private String text;
     private int Image;
 
     //constructor for creating object with resources
-    public Child(int image, String text){
+    public ChildPojo(int image, String text){
         this.Image = image;
         this.text = text;
     }
