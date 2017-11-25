@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 //create the view holder object with the inflated view
                 myViewHolder = new MyViewHolder(rootView);
                 //store the view holder object permanently in the listview for reusing it
+                view = rootView;
                 view.setTag(myViewHolder);
             }else {
                 //for old child item, reuse using the view holder object
@@ -87,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             myViewHolder.imageView.setImageDrawable(getDrawable(childPojoList.get(i).getImage()));
             myViewHolder.textView.setText(childPojoList.get(i).getText());
             //return the view
-            return myViewHolder.view;
+            return view;
         }
 
     }
